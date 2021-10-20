@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Restorante Con Fusion</title>
+</head>
+
+
+<body>
+
+    <div class="modal" id="loginmodal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-footer">
+                    <input type="text" class="text" placeholder="Enter Email">
+                    <input type="text" class="text" placeholder="Password">
+                    <input type="checkbox">Remember me
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+
+            <div class="container" id="reserve-btn">
+
+                <div class="card justify-content-center">
+                    <div class="card-body">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Reserve Table</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div><br>
+                        <div class="modal-footer">
+
+                            <div>
+                                <div class="buffet"> Number of <br>Guests</div>
+
+                                <div class="offset-3">
+                                    <input type="radio" name="guest"> 1
+                                    <input type="radio" name="guest"> 2
+                                    <input type="radio" name="guest"> 3
+                                    <input type="radio" name="guest"> 4
+                                    <input type="radio" name="guest"> 5
+                                    <input type="radio" name="guest"> 6
+                                </div>
+                            </div><br><br>
+
+
+                            <labelxx>Section </labelxx>
+                            <div class="btn-group offset-1">
+
+                                <button type="button" class="btn btn-success">Non-Smoking</button>
+                                <button type="button" class="btn btn-danger">Smoking</button>
+                            </div><br><br>
+
+                            Date and<br> Time <input type="textBox" placeholder="Date">
+                            <input type="textBox" placeholder="Time"><br>
+
+                            <div class="">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container col-12 ">
+            <img src="logo.png" alt="" width="30" height="24">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-block login-btn " data-bs-toggle="modal"
+                        data-bs-target="#loginmodal">
+                        <strong>Login</strong>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+    <header class="task1">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Restorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
+
+                </div>
+                <div class="col-12 col-sm-3">
+                    <img src="logo.png" class="align-self-center">
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-block nav-link btn-warning reservebtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <strong>Reserve Table</strong>
+                </button>
+
+
+            </div>
+        </div>
+    </header><br><br>
+
+
+
+    <div class="container">
+
+        <div class="media">
+            <div class="media-body">
+                <div class="col-12 col-sm-2 mr-1 rspace">
+                    <img class="d-flex img-thumbnail mr-1 align-self-center" src="uthappizza.png" alt="Uthappizza">
+
+                </div>
+                <div class="col-12 col-sm-8	">
+                    <h2 class="mt-0">Uthappizza<span class="badge bg-danger">HOT</span>
+                        <span class="badge bg-secondary">$4.96</span>
+                    </h2>
+                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                        Italian pizza, topped with Cerignola olives, ripe vine
+                        cherry tomatoes, Vidalia onion, Guntur chillies and
+                        Buffalo Paneer.</p>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+
+    <div class="container ">
+        <div class="media">
+            <div class="col-sm-12 ">
+                <div class="col-12 col-sm-3 align-items-center buffet">
+                    <h2>This Month's Promotions</h2>
+                </div>
+                <div class="col-sm-10 media">
+                    <div class="col-12 col-sm-6 buffet">
+                        <h2>Weekend Grand Buffet<span class="badge bg-danger"> HOT</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
+                            appetizers, six main entrees and five chicest desserts.Free flowing bubbly and soft drinks.
+                            All for just $19.99 per person</p>
+                    </div>
+                    <div class="col-sm-2 ml-3 d-flex align-self-center">
+                        <img src="buffet.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+
+
+    <p>
+    <div class="container ">
+        <div class="media">
+            <img class="d-flex buffet align-self-center mt-3" src="alberto.png" alt="Alberto Somayya">
+            <div class="media-body col-12 col-sm-8">
+                <div class="offset-2">
+                    <h2 class="mt-0">Alberto Somayya</h2>
+                    <h4>Executive Chef</h4>
+                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                        International experience having worked closely with
+                        whos-who in the culinary world, he specializes in
+                        creating mouthwatering Indo-Italian fusion experiences.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-2">
+
+            </div>
+        </div>
+
+    </div>
+    </p><br><br>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        Tel.: +852 1234 5678<br>
+                        Fax: +852 8765 4321<br>
+                        Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="http://google.com/+">Google+</a>
+                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
+                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
+                        <a href="http://twitter.com/">Twitter</a>
+                        <a href="http://youtube.com/">YouTube</a>
+                        <a href="mailto:">Mail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
